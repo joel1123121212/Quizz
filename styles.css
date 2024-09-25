@@ -1,0 +1,100 @@
+* {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+
+body {
+    font-family: Arial, sans-serif;
+    background-color: black; /* Fondo negro */
+    color: white; /* Texto blanco */
+    padding: 20px;
+}
+
+h1 {
+    text-align: center;
+    margin-bottom: 20px;
+}
+
+#quiz-container {
+    max-width: 800px;
+    margin: 0 auto;
+    background-color: #222; /* Color de fondo oscuro para el contenedor */
+    padding: 20px;
+    border-radius: 8px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.5);
+}
+
+.question {
+    margin-bottom: 40px; /* Aumenta el espacio entre preguntas y respuestas */
+    padding: 15px; /* Espaciado interno del cuadrado */
+    border: 2px solid #444; /* Borde para distinguir preguntas */
+    border-radius: 8px;
+    background-color: #333; /* Fondo para cada pregunta */
+    text-align: center; /* Centra el contenido dentro del div de la pregunta */
+}
+
+.question img {
+    width: 100%;  /* La imagen ocupa el 100% del contenedor */
+    max-width: 300px; /* Limita el ancho máximo de la imagen */
+    height: auto;
+    display: block;
+    margin: 10px auto; /* Centra la imagen horizontalmente */
+    border-radius: 8px;
+}
+
+.question h2 {
+    font-size: 1.5em; /* Aumenta el tamaño del texto de la pregunta */
+    margin-bottom: 10px;
+}
+
+ul {
+    list-style-type: none;
+    padding-left: 0;
+}
+
+li {
+    margin-bottom: 15px; /* Aumenta el margen entre las respuestas */
+    text-align: left; /* Cambia a izquierda para alineación adecuada */
+    display: flex; /* Utiliza flexbox para alinear los elementos */
+    align-items: center; /* Alinea verticalmente el contenido */
+}
+
+input[type="radio"] {
+    transform: scale(1.5); /* Aumenta el tamaño de las bolitas */
+    margin-right: 10px; /* Espaciado entre el botón de opción y el texto */
+}
+
+button {
+    display: block;
+    width: 100%;
+    padding: 15px; /* Aumenta el padding del botón */
+    background-color: #4CAF50;
+    color: white;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    font-size: 1.2em; /* Aumenta el tamaño del texto del botón */
+}
+
+button:hover {
+    background-color: #45a049;
+}
+
+.hidden {
+    display: none;
+}
+
+#result-screen {
+    text-align: center;
+}
+
+#result-screen img {
+    max-width: 150px;
+    margin: 20px 0;
+}
+
+#resultado {
+    font-size: 2em;
+    margin-top: 20px;
+}
